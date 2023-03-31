@@ -134,7 +134,28 @@ body {
 }
 
 .credits {
+    z-index: 1 !important;
+}
+
+.credits,
+.container {
     position: absolute;
     top: 1%;
     right: 1%;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.container {
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.credits p:nth-child(1),
+.container span:nth-child(1) {
+    font-size: 2.7vmin;
 }
