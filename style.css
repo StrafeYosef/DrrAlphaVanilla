@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#drr,
+.mainImage,
+.mainImage img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.mainImage {
+    overflow: hidden;
+}
+
+.move {
+    position: absolute;
+    color: white;
+    width: 80vw;
+    height: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    text-shadow: 0 0 1vmin black;
+    /* z-index: 41241; */
+}
+
+.move p {
+    /* z-index: 41242; */
+    text-shadow: 0 0 1vmin white;
+    color: rgb(122, 18, 18);
+    font-size: 7vmin;
+    animation: dvd 45s linear infinite;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-weight: bolder;
+}
+
+@keyframes dvd {
+    0% {
+        transform: translate(0, 50%);
+    }
+    25% {
+        transform: translate(50%, 100%);
+    }
+    50% {
+        transform: translate(100%, 50%);
+    }
+    75% {
+        transform: translate(50%, 0);
+    }
+    100% {
+        transform: translate(0, 50%);
+    }
+}
+
+.dn {
+    display: none !important;
+}
+
+.dialogConatiner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 3vmin #900000;
+}
+
+.dialogConatiner img {
+    z-index: 3;
+    position: relative;
+}
+
+.dialogConatiner p {
+    width: 100%;
+    height: 100%;
+    font-size: 5.5vmin;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 4;
+    background: #380a0ac4;
+    line-height: 15vmin;
+    font-weight: bolder;
+    color: #878709;
+    text-shadow: 0 0 1vmin brown;
+    flex-direction: column;
+}
+
+.dialogConatiner p a {
+    color: #c7c752;
+}
+
+.gate {
+    position: absolute;
+    left: 21vw;
+    top: -15%;
+    width: 64% !important;
+    transform: scale(.55);
+    cursor: pointer;
+}
+
+.trans {
+    transition: all, .5s;
+}
+
+.gate:hover {
+    filter: drop-shadow(0 0 2vmin white);
+}
+
+.square {
+    width: 25%;
+    height: 100%;
+    z-index: 2;
+}
