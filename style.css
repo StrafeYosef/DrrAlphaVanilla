@@ -33,11 +33,10 @@ body {
     align-items: center;
     z-index: 4;
     text-shadow: 0 0 1vmin black;
-    /* z-index: 41241; */
+    z-index: 7;
 }
 
 .move p {
-    /* z-index: 41242; */
     text-shadow: 0 0 1vmin white;
     color: rgb(122, 18, 18);
     font-size: 7vmin;
