@@ -25,8 +25,10 @@ body {
 .move {
     position: absolute;
     color: white;
+    /* width: 80vw;
+    height: 92%; */
     width: 80vw;
-    height: 92%;
+    height: 0%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -34,6 +36,7 @@ body {
     z-index: 4;
     text-shadow: 0 0 1vmin black;
     z-index: 7;
+    bottom: 15%;
 }
 
 .move p {
@@ -79,6 +82,7 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 3vmin #900000;
+    z-index: 10;
 }
 
 .dialogConatiner img {
@@ -96,7 +100,7 @@ body {
     justify-content: center;
     align-items: center;
     top: 0;
-    z-index: 4;
+    z-index: 58;
     background: #380a0ac4;
     line-height: 15vmin;
     font-weight: bolder;
@@ -107,6 +111,7 @@ body {
 
 .dialogConatiner p a {
     color: #c7c752;
+    z-index: 42141414;
 }
 
 .gate {
@@ -133,7 +138,7 @@ body {
 }
 
 .credits {
-    z-index: 1 !important;
+    z-index: 7 !important;
 }
 
 .credits,
